@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_49a556d7107e8c37d346efe68b06f191 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <h3 align="center" style="font-size:18px"><b>FinanceCoach Usage by G50 Group (Mean Usage: 136.1)</b></h3>
+        
+    
+            <div class="folium-map" id="map_49a556d7107e8c37d346efe68b06f191" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_49a556d7107e8c37d346efe68b06f191 = L.map(
+                "map_49a556d7107e8c37d346efe68b06f191",
+                {
+                    center: [-3.3126792980000004, 29.819866428],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9dbfd069ac01303e3d7d69fd6d7c8033 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9dbfd069ac01303e3d7d69fd6d7c8033.addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+            var circle_marker_10ca28fe54aa61c344f1d32047d5f459 = L.circleMarker(
+                [-2.7151494, 29.2438827],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.7434554973822, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_04afc06e9312147c3f64396afe798b97 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_274d0d2f060ba2718942a6ca10029949 = $(`<div id="html_274d0d2f060ba2718942a6ca10029949" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mir-rya-gr3.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 179</div>`)[0];
+                popup_04afc06e9312147c3f64396afe798b97.setContent(html_274d0d2f060ba2718942a6ca10029949);
+            
+        
+
+        circle_marker_10ca28fe54aa61c344f1d32047d5f459.bindPopup(popup_04afc06e9312147c3f64396afe798b97)
+        ;
+
+        
+    
+    
+            var circle_marker_7fc6a1a8e8b58e4be8d818164d974b06 = L.circleMarker(
+                [-2.7151494, 29.2438827],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.926701570680628, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_48bef772f5ff835925d2bf53a1404616 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5e32ee3dc67aee324ae7afcc94a1e121 = $(`<div id="html_5e32ee3dc67aee324ae7afcc94a1e121" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mir-rya-gr1.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 133</div>`)[0];
+                popup_48bef772f5ff835925d2bf53a1404616.setContent(html_5e32ee3dc67aee324ae7afcc94a1e121);
+            
+        
+
+        circle_marker_7fc6a1a8e8b58e4be8d818164d974b06.bindPopup(popup_48bef772f5ff835925d2bf53a1404616)
+        ;
+
+        
+    
+    
+            var circle_marker_e13af35a738402fd0e587131e1dc9fb6 = L.circleMarker(
+                [-3.37438, 29.3502433],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.890052356020943, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_2b06f525efcb3925ebcb12536460d308 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_93666f1adc9c88e5d9fdd3855fae6e85 = $(`<div id="html_93666f1adc9c88e5d9fdd3855fae6e85" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> gah-rug-gr1.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 104</div>`)[0];
+                popup_2b06f525efcb3925ebcb12536460d308.setContent(html_93666f1adc9c88e5d9fdd3855fae6e85);
+            
+        
+
+        circle_marker_e13af35a738402fd0e587131e1dc9fb6.bindPopup(popup_2b06f525efcb3925ebcb12536460d308)
+        ;
+
+        
+    
+    
+            var circle_marker_e22f45144a5546f413b2ea872a425001 = L.circleMarker(
+                [-3.1294312, 30.2965187],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.162303664921467, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_0589d99fc506c21caf8ed340de4436a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23c205d8da4ad9f17fc1adc02a077cbf = $(`<div id="html_23c205d8da4ad9f17fc1adc02a077cbf" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> but-nyab-gr1.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 183</div>`)[0];
+                popup_0589d99fc506c21caf8ed340de4436a7.setContent(html_23c205d8da4ad9f17fc1adc02a077cbf);
+            
+        
+
+        circle_marker_e22f45144a5546f413b2ea872a425001.bindPopup(popup_0589d99fc506c21caf8ed340de4436a7)
+        ;
+
+        
+    
+    
+            var circle_marker_61f10922c505f8b233cba2d13781f438 = L.circleMarker(
+                [-3.372877, 29.3520754],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.80104712041885, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_7e1e83f5a62d7bb09bdec496652bb569 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fa0e11af93634c519b185465a5ea915c = $(`<div id="html_fa0e11af93634c519b185465a5ea915c" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> gah-mit-gr1.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 170</div>`)[0];
+                popup_7e1e83f5a62d7bb09bdec496652bb569.setContent(html_fa0e11af93634c519b185465a5ea915c);
+            
+        
+
+        circle_marker_61f10922c505f8b233cba2d13781f438.bindPopup(popup_7e1e83f5a62d7bb09bdec496652bb569)
+        ;
+
+        
+    
+    
+            var circle_marker_6b6437b3a141630775e20f0e906f3a08 = L.circleMarker(
+                [-3.423346, 29.3629629],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.298429319371728, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_3bc3cfdd6f085c067db587cbcd19675f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_75e07b4ad5c4a536d0d6cdd1a6b80fab = $(`<div id="html_75e07b4ad5c4a536d0d6cdd1a6b80fab" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mbo-mpi-gr1.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 127</div>`)[0];
+                popup_3bc3cfdd6f085c067db587cbcd19675f.setContent(html_75e07b4ad5c4a536d0d6cdd1a6b80fab);
+            
+        
+
+        circle_marker_6b6437b3a141630775e20f0e906f3a08.bindPopup(popup_3bc3cfdd6f085c067db587cbcd19675f)
+        ;
+
+        
+    
+    
+            var circle_marker_f6fb2a1469760ace2a4e0bcb2f06389d = L.circleMarker(
+                [-3.423346, 29.3629629],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.06282722513089, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_226a4e269cd531c203767104d0136817 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6e0e1bb04c0c24b054a1271a65a4ddac = $(`<div id="html_6e0e1bb04c0c24b054a1271a65a4ddac" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mbo-rut-gr1.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 77</div>`)[0];
+                popup_226a4e269cd531c203767104d0136817.setContent(html_6e0e1bb04c0c24b054a1271a65a4ddac);
+            
+        
+
+        circle_marker_f6fb2a1469760ace2a4e0bcb2f06389d.bindPopup(popup_226a4e269cd531c203767104d0136817)
+        ;
+
+        
+    
+    
+            var circle_marker_eff52e594435d10f7228c47f4e665f44 = L.circleMarker(
+                [-3.3790872, 29.3648913],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.267015706806284, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_de4d4d29433e7a4753bd83e903960d95 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c5797f295c747d7dcc3c22c7fc5bb3cf = $(`<div id="html_c5797f295c747d7dcc3c22c7fc5bb3cf" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> ruk-kiv-gr1.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 184</div>`)[0];
+                popup_de4d4d29433e7a4753bd83e903960d95.setContent(html_c5797f295c747d7dcc3c22c7fc5bb3cf);
+            
+        
+
+        circle_marker_eff52e594435d10f7228c47f4e665f44.bindPopup(popup_de4d4d29433e7a4753bd83e903960d95)
+        ;
+
+        
+    
+    
+            var circle_marker_ed0f27eb39f3e3506199b7cb4d54b847 = L.circleMarker(
+                [-3.3788063, 29.365866],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9109947643979055, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_c8d2dd618ed45b45a02664be1954925c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6f121668f55de372d654ded1c880965e = $(`<div id="html_6f121668f55de372d654ded1c880965e" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> ruk-mih-gr1.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 66</div>`)[0];
+                popup_c8d2dd618ed45b45a02664be1954925c.setContent(html_6f121668f55de372d654ded1c880965e);
+            
+        
+
+        circle_marker_ed0f27eb39f3e3506199b7cb4d54b847.bindPopup(popup_c8d2dd618ed45b45a02664be1954925c)
+        ;
+
+        
+    
+    
+            var circle_marker_c4d60846bd78af213b82f67e4f68668d = L.circleMarker(
+                [-3.3037396, 29.4054163],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.38219895287958, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_f22db7f5779cfc0278cb20ea64081ae5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_190b342dd0a313e7466027cbab838f69 = $(`<div id="html_190b342dd0a313e7466027cbab838f69" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mar13-dor-gr1.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 166</div>`)[0];
+                popup_f22db7f5779cfc0278cb20ea64081ae5.setContent(html_190b342dd0a313e7466027cbab838f69);
+            
+        
+
+        circle_marker_c4d60846bd78af213b82f67e4f68668d.bindPopup(popup_f22db7f5779cfc0278cb20ea64081ae5)
+        ;
+
+        
+    
+    
+            var circle_marker_b61c138301be239d7c0432e27466baad = L.circleMarker(
+                [-3.3037396, 29.4054163],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.926701570680628, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_6a894572ca180069ae1d7829fda2ed21 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bed52304d4c2014f7dab58038d920dc6 = $(`<div id="html_bed52304d4c2014f7dab58038d920dc6" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mar13-riz-gr1.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 133</div>`)[0];
+                popup_6a894572ca180069ae1d7829fda2ed21.setContent(html_bed52304d4c2014f7dab58038d920dc6);
+            
+        
+
+        circle_marker_b61c138301be239d7c0432e27466baad.bindPopup(popup_6a894572ca180069ae1d7829fda2ed21)
+        ;
+
+        
+    
+    
+            var circle_marker_0f7e506bfb802db0e559b866dc4d5b28 = L.circleMarker(
+                [-2.9445778, 29.5932236],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_440dc4209c8eb51420ed7caff1353364 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ed140cdd83f0d0f906b690f2729a50b = $(`<div id="html_2ed140cdd83f0d0f906b690f2729a50b" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> rem-cur-gr3.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 191</div>`)[0];
+                popup_440dc4209c8eb51420ed7caff1353364.setContent(html_2ed140cdd83f0d0f906b690f2729a50b);
+            
+        
+
+        circle_marker_0f7e506bfb802db0e559b866dc4d5b28.bindPopup(popup_440dc4209c8eb51420ed7caff1353364)
+        ;
+
+        
+    
+    
+            var circle_marker_e410fd10d0638bc81c273a48fe8b6f53 = L.circleMarker(
+                [-2.9294559, 29.6040929],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.706806282722514, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_6d623f9bd801eaf6c98110d72cacafeb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_709742c36051b2b3e8032d7f792bdfd1 = $(`<div id="html_709742c36051b2b3e8032d7f792bdfd1" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> rem-git-gr2.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 150</div>`)[0];
+                popup_6d623f9bd801eaf6c98110d72cacafeb.setContent(html_709742c36051b2b3e8032d7f792bdfd1);
+            
+        
+
+        circle_marker_e410fd10d0638bc81c273a48fe8b6f53.bindPopup(popup_6d623f9bd801eaf6c98110d72cacafeb)
+        ;
+
+        
+    
+    
+            var circle_marker_4c3a8af143887e9087b10f35c81c9110 = L.circleMarker(
+                [-2.9294559, 29.6040929],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.157068062827225, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_00ce0ea82408594efe5d359d3b0c105e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8e732ca6f9e7d0e1526a1985fbd9e0ae = $(`<div id="html_8e732ca6f9e7d0e1526a1985fbd9e0ae" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> ruha-ruh-gr2.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 97</div>`)[0];
+                popup_00ce0ea82408594efe5d359d3b0c105e.setContent(html_8e732ca6f9e7d0e1526a1985fbd9e0ae);
+            
+        
+
+        circle_marker_4c3a8af143887e9087b10f35c81c9110.bindPopup(popup_00ce0ea82408594efe5d359d3b0c105e)
+        ;
+
+        
+    
+    
+            var circle_marker_554aa28a0d5ae9343039c5387a1e6206 = L.circleMarker(
+                [-2.9304052, 29.609165],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.214659685863873, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_f76fea504de1b6d6b3ecde1f6c80b733 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48513139ad52e3c6a209aedba3e791c1 = $(`<div id="html_48513139ad52e3c6a209aedba3e791c1" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> ruh-kib-gr2.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 88</div>`)[0];
+                popup_f76fea504de1b6d6b3ecde1f6c80b733.setContent(html_48513139ad52e3c6a209aedba3e791c1);
+            
+        
+
+        circle_marker_554aa28a0d5ae9343039c5387a1e6206.bindPopup(popup_f76fea504de1b6d6b3ecde1f6c80b733)
+        ;
+
+        
+    
+    
+            var circle_marker_9066ef43133605db257960c6c00f93b6 = L.circleMarker(
+                [-2.9167455, 29.617135],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.38219895287958, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_add7d385e15d77681ad63133dc381859 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f383df73ada3de2f95bbb7bcc8509f6 = $(`<div id="html_2f383df73ada3de2f95bbb7bcc8509f6" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> shi-war-gr1.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 166</div>`)[0];
+                popup_add7d385e15d77681ad63133dc381859.setContent(html_2f383df73ada3de2f95bbb7bcc8509f6);
+            
+        
+
+        circle_marker_9066ef43133605db257960c6c00f93b6.bindPopup(popup_add7d385e15d77681ad63133dc381859)
+        ;
+
+        
+    
+    
+            var circle_marker_3ad58c04a599bfd1bbb2bc59fc985303 = L.circleMarker(
+                [-2.9167455, 29.617135],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.916230366492146, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_66bf7c494799de10d900b6e91777e290 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_63473842a07cd98b6b1928a44ea7c4a3 = $(`<div id="html_63473842a07cd98b6b1928a44ea7c4a3" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> shi-war-gr3.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 152</div>`)[0];
+                popup_66bf7c494799de10d900b6e91777e290.setContent(html_63473842a07cd98b6b1928a44ea7c4a3);
+            
+        
+
+        circle_marker_3ad58c04a599bfd1bbb2bc59fc985303.bindPopup(popup_66bf7c494799de10d900b6e91777e290)
+        ;
+
+        
+    
+    
+            var circle_marker_c5d5fdcf3b88f1b841d5e749464086f8 = L.circleMarker(
+                [-2.8861806, 29.6323493],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.1151832460733, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_0ef6161c778ceed76a3de01fd8b06319 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_181afadabb1834ffd08c450c664e7f3e = $(`<div id="html_181afadabb1834ffd08c450c664e7f3e" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> gac-ngo-gr2.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 173</div>`)[0];
+                popup_0ef6161c778ceed76a3de01fd8b06319.setContent(html_181afadabb1834ffd08c450c664e7f3e);
+            
+        
+
+        circle_marker_c5d5fdcf3b88f1b841d5e749464086f8.bindPopup(popup_0ef6161c778ceed76a3de01fd8b06319)
+        ;
+
+        
+    
+    
+            var circle_marker_dbbcb99ea0c6f5290fc68811779a8f18 = L.circleMarker(
+                [-2.8861806, 29.6323493],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.05759162303665, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_28893da167247d6c055fa5db386db56c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b37e5c7ef70db0f75a19ac0822fdbed8 = $(`<div id="html_b37e5c7ef70db0f75a19ac0822fdbed8" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> gac-ngo-gr1.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 182</div>`)[0];
+                popup_28893da167247d6c055fa5db386db56c.setContent(html_b37e5c7ef70db0f75a19ac0822fdbed8);
+            
+        
+
+        circle_marker_dbbcb99ea0c6f5290fc68811779a8f18.bindPopup(popup_28893da167247d6c055fa5db386db56c)
+        ;
+
+        
+    
+    
+            var circle_marker_54f59604fd08332aa654fb98c455215c = L.circleMarker(
+                [-3.0939362, 29.6682051],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.93717277486911, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_0cf0cef4d6c938a7b5e15f92f21ba204 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e48d4869c749b01a300d691c71694e97 = $(`<div id="html_e48d4869c749b01a300d691c71694e97" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> rwa-mut-gr2.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 114</div>`)[0];
+                popup_0cf0cef4d6c938a7b5e15f92f21ba204.setContent(html_e48d4869c749b01a300d691c71694e97);
+            
+        
+
+        circle_marker_54f59604fd08332aa654fb98c455215c.bindPopup(popup_0cf0cef4d6c938a7b5e15f92f21ba204)
+        ;
+
+        
+    
+    
+            var circle_marker_f1d4dd013c259d97d6fc28a01a0d1ce7 = L.circleMarker(
+                [-3.0600328, 29.6711021],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.93717277486911, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_7c8677314ff9d11aaa18f1496f3681de = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e13ab6b0fa08b727648a54d098463d33 = $(`<div id="html_e13ab6b0fa08b727648a54d098463d33" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> rwa-mut-gr1.pnseb<br>         <b>Province:</b> KAYANZA<br>         <b>Usage:</b> 114</div>`)[0];
+                popup_7c8677314ff9d11aaa18f1496f3681de.setContent(html_e13ab6b0fa08b727648a54d098463d33);
+            
+        
+
+        circle_marker_f1d4dd013c259d97d6fc28a01a0d1ce7.bindPopup(popup_7c8677314ff9d11aaa18f1496f3681de)
+        ;
+
+        
+    
+    
+            var circle_marker_0f8d9b5ab9fad6b847d8c5efa8fb7aa5 = L.circleMarker(
+                [-4.134514, 29.8006835],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.80104712041885, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_40714cf0648d41984fff5aa9a12a0a50 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_26fe98ce5c97c7cc839feec005b03fd6 = $(`<div id="html_26fe98ce5c97c7cc839feec005b03fd6" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> kiz-kizi-gr1.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 170</div>`)[0];
+                popup_40714cf0648d41984fff5aa9a12a0a50.setContent(html_26fe98ce5c97c7cc839feec005b03fd6);
+            
+        
+
+        circle_marker_0f8d9b5ab9fad6b847d8c5efa8fb7aa5.bindPopup(popup_40714cf0648d41984fff5aa9a12a0a50)
+        ;
+
+        
+    
+    
+            var circle_marker_d6b94ffc25fd25751ccd0f64bebe2e22 = L.circleMarker(
+                [-4.1318964, 29.8036233],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.75392670157068, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_6b3eb9120cf15e13e3fa9ad93bc2d3e7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bdf3870122031fd4e02bda3f27794e80 = $(`<div id="html_bdf3870122031fd4e02bda3f27794e80" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> kar-karo-gr1.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 160</div>`)[0];
+                popup_6b3eb9120cf15e13e3fa9ad93bc2d3e7.setContent(html_bdf3870122031fd4e02bda3f27794e80);
+            
+        
+
+        circle_marker_d6b94ffc25fd25751ccd0f64bebe2e22.bindPopup(popup_6b3eb9120cf15e13e3fa9ad93bc2d3e7)
+        ;
+
+        
+    
+    
+            var circle_marker_f65a7746c5dc3520bbeeb4736fee2cc8 = L.circleMarker(
+                [-4.1323963, 29.8043014],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.49738219895288, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_d3f5de1ac692cb193fffa8e72367b30f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4c73a36b1ac53a2b892cb9b37e477650 = $(`<div id="html_4c73a36b1ac53a2b892cb9b37e477650" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> can-cand-gr1.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 148</div>`)[0];
+                popup_d3f5de1ac692cb193fffa8e72367b30f.setContent(html_4c73a36b1ac53a2b892cb9b37e477650);
+            
+        
+
+        circle_marker_f65a7746c5dc3520bbeeb4736fee2cc8.bindPopup(popup_d3f5de1ac692cb193fffa8e72367b30f)
+        ;
+
+        
+    
+    
+            var circle_marker_e321e729e369e34137cada9f8dc87931 = L.circleMarker(
+                [-4.1323963, 29.8043014],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.717277486910994, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_6b6d278f8406ac2e1761a877e93b92f7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b689290ca2674ba34f35ebca6d7e08b5 = $(`<div id="html_b689290ca2674ba34f35ebca6d7e08b5" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> can-cand-gr2.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 131</div>`)[0];
+                popup_6b6d278f8406ac2e1761a877e93b92f7.setContent(html_b689290ca2674ba34f35ebca6d7e08b5);
+            
+        
+
+        circle_marker_e321e729e369e34137cada9f8dc87931.bindPopup(popup_6b6d278f8406ac2e1761a877e93b92f7)
+        ;
+
+        
+    
+    
+            var circle_marker_de77371c3f00003f4d224808f5a9206d = L.circleMarker(
+                [-4.1303979, 29.8050249],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.785340314136125, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_eec06f0f9fc2609f8d7d0a5a000dcb74 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4a11a56322f9a017865a18ab24f6eebf = $(`<div id="html_4a11a56322f9a017865a18ab24f6eebf" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> kar-nkin-gr1.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 103</div>`)[0];
+                popup_eec06f0f9fc2609f8d7d0a5a000dcb74.setContent(html_4a11a56322f9a017865a18ab24f6eebf);
+            
+        
+
+        circle_marker_de77371c3f00003f4d224808f5a9206d.bindPopup(popup_eec06f0f9fc2609f8d7d0a5a000dcb74)
+        ;
+
+        
+    
+    
+            var circle_marker_911f9ca33f2f3f456c6774703e33d739 = L.circleMarker(
+                [-4.1328992, 29.8057485],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.973821989528794, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_466490e99e0c251d44e84a0d60fb537d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5290a4485b278a1a7bd7f344cbc4dc65 = $(`<div id="html_5290a4485b278a1a7bd7f344cbc4dc65" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> kiz-gak-gr3.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 143</div>`)[0];
+                popup_466490e99e0c251d44e84a0d60fb537d.setContent(html_5290a4485b278a1a7bd7f344cbc4dc65);
+            
+        
+
+        circle_marker_911f9ca33f2f3f456c6774703e33d739.bindPopup(popup_466490e99e0c251d44e84a0d60fb537d)
+        ;
+
+        
+    
+    
+            var circle_marker_ad6bbb4a3e66a6814fa2e34e1f3998c2 = L.circleMarker(
+                [-3.4809798, 29.9243607],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.858638743455497, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_6d228b142dee93485bd8dba476ebe33d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_495d1e7ec4d27eaa26a9cfde094d98d7 = $(`<div id="html_495d1e7ec4d27eaa26a9cfde094d98d7" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> kib-mwo-gr1.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 161</div>`)[0];
+                popup_6d228b142dee93485bd8dba476ebe33d.setContent(html_495d1e7ec4d27eaa26a9cfde094d98d7);
+            
+        
+
+        circle_marker_ad6bbb4a3e66a6814fa2e34e1f3998c2.bindPopup(popup_6d228b142dee93485bd8dba476ebe33d)
+        ;
+
+        
+    
+    
+            var circle_marker_2845bae000c5c42d5a3263bac71ff26d = L.circleMarker(
+                [-3.4809798, 29.9243607],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.157068062827225, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_d69eb0f0a6c39ca1314b56fd830dd4de = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_666c211797ef01260e3cdaa4c63460b2 = $(`<div id="html_666c211797ef01260e3cdaa4c63460b2" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> kib-mwo-gr2.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 97</div>`)[0];
+                popup_d69eb0f0a6c39ca1314b56fd830dd4de.setContent(html_666c211797ef01260e3cdaa4c63460b2);
+            
+        
+
+        circle_marker_2845bae000c5c42d5a3263bac71ff26d.bindPopup(popup_d69eb0f0a6c39ca1314b56fd830dd4de)
+        ;
+
+        
+    
+    
+            var circle_marker_ea911d171771259a8309be73d0bfd20e = L.circleMarker(
+                [-3.4228393, 29.9254451],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.146596858638743, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_0b96b4d05073cb8b9b5ed20c1cf1dc24 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1fb67cc9a39b8fab620d58e822d9525e = $(`<div id="html_1fb67cc9a39b8fab620d58e822d9525e" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> rute-kab-gr1.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 116</div>`)[0];
+                popup_0b96b4d05073cb8b9b5ed20c1cf1dc24.setContent(html_1fb67cc9a39b8fab620d58e822d9525e);
+            
+        
+
+        circle_marker_ea911d171771259a8309be73d0bfd20e.bindPopup(popup_0b96b4d05073cb8b9b5ed20c1cf1dc24)
+        ;
+
+        
+    
+    
+            var circle_marker_e21a6698eb8f608ccd6b17e85f3e7229 = L.circleMarker(
+                [-3.4255919, 29.9258066],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.05759162303665, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_9b281da130827d2a8f18808f09495dd9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dcc97a5809bd83d897e06bb0c42ba093 = $(`<div id="html_dcc97a5809bd83d897e06bb0c42ba093" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mun-rut-gr2.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 182</div>`)[0];
+                popup_9b281da130827d2a8f18808f09495dd9.setContent(html_dcc97a5809bd83d897e06bb0c42ba093);
+            
+        
+
+        circle_marker_e21a6698eb8f608ccd6b17e85f3e7229.bindPopup(popup_9b281da130827d2a8f18808f09495dd9)
+        ;
+
+        
+    
+    
+            var circle_marker_63ad7949dea00f7fdd50abaa94c088ed = L.circleMarker(
+                [-3.4255919, 29.9258066],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.586387434554974, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_b880043f9a7c013cc77fc84e6210dc73 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a8f3d5a6773cee8b01c5520f0ec60d1b = $(`<div id="html_a8f3d5a6773cee8b01c5520f0ec60d1b" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mung-kir-gr1.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 82</div>`)[0];
+                popup_b880043f9a7c013cc77fc84e6210dc73.setContent(html_a8f3d5a6773cee8b01c5520f0ec60d1b);
+            
+        
+
+        circle_marker_63ad7949dea00f7fdd50abaa94c088ed.bindPopup(popup_b880043f9a7c013cc77fc84e6210dc73)
+        ;
+
+        
+    
+    
+            var circle_marker_763d6fa018f9e665d51afddfb5cc58e3 = L.circleMarker(
+                [-3.4205282, 29.9283368],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.041884816753928, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_4e448bbb96da586a6b021025ac0b9912 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c6ff8b5847c699333d2327276934c943 = $(`<div id="html_c6ff8b5847c699333d2327276934c943" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> bir-coz-gr1.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 115</div>`)[0];
+                popup_4e448bbb96da586a6b021025ac0b9912.setContent(html_c6ff8b5847c699333d2327276934c943);
+            
+        
+
+        circle_marker_763d6fa018f9e665d51afddfb5cc58e3.bindPopup(popup_4e448bbb96da586a6b021025ac0b9912)
+        ;
+
+        
+    
+    
+            var circle_marker_7f2945d14dd75caeff6cebca517d3d80 = L.circleMarker(
+                [-3.4205282, 29.9283368],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.963350785340314, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_e12a91495901b595e9c3869854e6ca37 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_17001630109be445eea810a74072472c = $(`<div id="html_17001630109be445eea810a74072472c" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> bir-git-gr1.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 162</div>`)[0];
+                popup_e12a91495901b595e9c3869854e6ca37.setContent(html_17001630109be445eea810a74072472c);
+            
+        
+
+        circle_marker_7f2945d14dd75caeff6cebca517d3d80.bindPopup(popup_e12a91495901b595e9c3869854e6ca37)
+        ;
+
+        
+    
+    
+            var circle_marker_3c8369a994a000fea0279e4930aa437e = L.circleMarker(
+                [-3.4207447, 29.9289716],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.324607329842934, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_2cc752087f7d61745f13ae2c93d710b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_66bfa6185f6af372ad7dbf7870b1e728 = $(`<div id="html_66bfa6185f6af372ad7dbf7870b1e728" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> rute-kab-gr2.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 175</div>`)[0];
+                popup_2cc752087f7d61745f13ae2c93d710b6.setContent(html_66bfa6185f6af372ad7dbf7870b1e728);
+            
+        
+
+        circle_marker_3c8369a994a000fea0279e4930aa437e.bindPopup(popup_2cc752087f7d61745f13ae2c93d710b6)
+        ;
+
+        
+    
+    
+            var circle_marker_9491b498570ddcf0e6c47aedd6781baa = L.circleMarker(
+                [-4.1201191, 29.9453242],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.3717277486911, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_cd3fe4c7bba1ee16147dad6bb7786381 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a196ac9184ef7dee4b1720854a952d93 = $(`<div id="html_a196ac9184ef7dee4b1720854a952d93" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> muya-muyag-gr1.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 185</div>`)[0];
+                popup_cd3fe4c7bba1ee16147dad6bb7786381.setContent(html_a196ac9184ef7dee4b1720854a952d93);
+            
+        
+
+        circle_marker_9491b498570ddcf0e6c47aedd6781baa.bindPopup(popup_cd3fe4c7bba1ee16147dad6bb7786381)
+        ;
+
+        
+    
+    
+            var circle_marker_3dee6a707bf12d0beb667a7880f84d81 = L.circleMarker(
+                [-4.0947208, 29.9485769],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.575916230366492, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_7ac99ebf3df0f093f5aa673097a69552 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ca6fad9b154609c722b611c58c514aa6 = $(`<div id="html_ca6fad9b154609c722b611c58c514aa6" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> muy-ruba-gr1.pnseb<br>         <b>Province:</b> MAKAMBA<br>         <b>Usage:</b> 101</div>`)[0];
+                popup_7ac99ebf3df0f093f5aa673097a69552.setContent(html_ca6fad9b154609c722b611c58c514aa6);
+            
+        
+
+        circle_marker_3dee6a707bf12d0beb667a7880f84d81.bindPopup(popup_7ac99ebf3df0f093f5aa673097a69552)
+        ;
+
+        
+    
+    
+            var circle_marker_5b955f1e9713afe02a4c65e01bc0a759 = L.circleMarker(
+                [-3.7294893, 29.9984413],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.37696335078534, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_ccc1be32ca4a03828d1d9035afb651be = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9df4dc3b172bd40760d81d09a91aecdf = $(`<div id="html_9df4dc3b172bd40760d81d09a91aecdf" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> ruk-kan-gr2.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 80</div>`)[0];
+                popup_ccc1be32ca4a03828d1d9035afb651be.setContent(html_9df4dc3b172bd40760d81d09a91aecdf);
+            
+        
+
+        circle_marker_5b955f1e9713afe02a4c65e01bc0a759.bindPopup(popup_ccc1be32ca4a03828d1d9035afb651be)
+        ;
+
+        
+    
+    
+            var circle_marker_d90317d5ab4ed4d31fda39d9e9a1b19c = L.circleMarker(
+                [-3.7294893, 29.9984413],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.963350785340314, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_8dad8394af0684e6615a769286bf85c7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_145b10320b675486a62dc4d37548757c = $(`<div id="html_145b10320b675486a62dc4d37548757c" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> ruk-kan-gr1.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 162</div>`)[0];
+                popup_8dad8394af0684e6615a769286bf85c7.setContent(html_145b10320b675486a62dc4d37548757c);
+            
+        
+
+        circle_marker_d90317d5ab4ed4d31fda39d9e9a1b19c.bindPopup(popup_8dad8394af0684e6615a769286bf85c7)
+        ;
+
+        
+    
+    
+            var circle_marker_eb1d265c5c48a80f5f236f707f8f8d77 = L.circleMarker(
+                [-3.2904426, 30.0800637],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.099476439790577, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_b7161e966baeb242d5fd6a1be50b859e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9a7b6a0a1c22f9fb492e72e18378230e = $(`<div id="html_9a7b6a0a1c22f9fb492e72e18378230e" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mba-muh-gr1.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 106</div>`)[0];
+                popup_b7161e966baeb242d5fd6a1be50b859e.setContent(html_9a7b6a0a1c22f9fb492e72e18378230e);
+            
+        
+
+        circle_marker_eb1d265c5c48a80f5f236f707f8f8d77.bindPopup(popup_b7161e966baeb242d5fd6a1be50b859e)
+        ;
+
+        
+    
+    
+            var circle_marker_71bb69080f5e34357c9818458a0cfc86 = L.circleMarker(
+                [-3.2904426, 30.0800637],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.544502617801047, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_1b34559399508fc4a2ac404e6ab9a7c7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_32da437b0cdf375a0d501e0a7714470b = $(`<div id="html_32da437b0cdf375a0d501e0a7714470b" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> mba-mun-gr1.pnseb<br>         <b>Province:</b> BUJUMBURA RURAL<br>         <b>Usage:</b> 158</div>`)[0];
+                popup_1b34559399508fc4a2ac404e6ab9a7c7.setContent(html_32da437b0cdf375a0d501e0a7714470b);
+            
+        
+
+        circle_marker_71bb69080f5e34357c9818458a0cfc86.bindPopup(popup_1b34559399508fc4a2ac404e6ab9a7c7)
+        ;
+
+        
+    
+    
+            var circle_marker_8a3d4f27d5911a44bfa077ef680f65e3 = L.circleMarker(
+                [-3.0201406, 30.1796769],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.602094240837696, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_4d9fc3e2d459b2fce0ffa96bd8946808 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4373cdedb6d84504b06cad2b945228ab = $(`<div id="html_4373cdedb6d84504b06cad2b945228ab" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> kar-bud-gr2.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 149</div>`)[0];
+                popup_4d9fc3e2d459b2fce0ffa96bd8946808.setContent(html_4373cdedb6d84504b06cad2b945228ab);
+            
+        
+
+        circle_marker_8a3d4f27d5911a44bfa077ef680f65e3.bindPopup(popup_4d9fc3e2d459b2fce0ffa96bd8946808)
+        ;
+
+        
+    
+    
+            var circle_marker_8eff5aeeceeeefc5c1b3238e31927ccc = L.circleMarker(
+                [-3.0201406, 30.1796769],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.926701570680628, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_13c814fa536ca0cc62a841109aea7cfb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f4952610973b7d7ec6f7efb0ed38d18c = $(`<div id="html_f4952610973b7d7ec6f7efb0ed38d18c" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> kar-bud-gr1.pnseb<br>         <b>Province:</b> GITEGA<br>         <b>Usage:</b> 133</div>`)[0];
+                popup_13c814fa536ca0cc62a841109aea7cfb.setContent(html_f4952610973b7d7ec6f7efb0ed38d18c);
+            
+        
+
+        circle_marker_8eff5aeeceeeefc5c1b3238e31927ccc.bindPopup(popup_13c814fa536ca0cc62a841109aea7cfb)
+        ;
+
+        
+    
+    
+            var circle_marker_0a6312c9a05d6b89f5fb57b91f32ad34 = L.circleMarker(
+                [-2.9345567, 30.2683983],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.06806282722513, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_af64f71414243610eca07ceaff9e9389 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c3119a71fed35793ceead08a48252b40 = $(`<div id="html_c3119a71fed35793ceead08a48252b40" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> miz-nya-gr1.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 163</div>`)[0];
+                popup_af64f71414243610eca07ceaff9e9389.setContent(html_c3119a71fed35793ceead08a48252b40);
+            
+        
+
+        circle_marker_0a6312c9a05d6b89f5fb57b91f32ad34.bindPopup(popup_af64f71414243610eca07ceaff9e9389)
+        ;
+
+        
+    
+    
+            var circle_marker_fca7519d5e07a4a620bfd52c993c1466 = L.circleMarker(
+                [-2.922431, 30.2806573],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.62303664921466, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_ca0145f8a5862debb009af8ed02dfd70 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a59033ddf9de9cf567d126831b2465e6 = $(`<div id="html_a59033ddf9de9cf567d126831b2465e6" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> miz-but-gr1.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 111</div>`)[0];
+                popup_ca0145f8a5862debb009af8ed02dfd70.setContent(html_a59033ddf9de9cf567d126831b2465e6);
+            
+        
+
+        circle_marker_fca7519d5e07a4a620bfd52c993c1466.bindPopup(popup_ca0145f8a5862debb009af8ed02dfd70)
+        ;
+
+        
+    
+    
+            var circle_marker_d81886287c0ef23e622894931dc5737e = L.circleMarker(
+                [-3.1293527, 30.2903907],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.30890052356021, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_5f49515299e66d82b269c13335458621 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4eb20220007240f5dbd96127002f62c2 = $(`<div id="html_4eb20220007240f5dbd96127002f62c2" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> but-ruh2-gr1.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 108</div>`)[0];
+                popup_5f49515299e66d82b269c13335458621.setContent(html_4eb20220007240f5dbd96127002f62c2);
+            
+        
+
+        circle_marker_d81886287c0ef23e622894931dc5737e.bindPopup(popup_5f49515299e66d82b269c13335458621)
+        ;
+
+        
+    
+    
+            var circle_marker_e345c6b420faeb5e76917071c1b97dd6 = L.circleMarker(
+                [-2.7965017, 30.3535567],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.575916230366492, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_29415ca6ad7d65a1a259a2313630a15c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0c399a0f8d038996f3f1cbd31280f294 = $(`<div id="html_0c399a0f8d038996f3f1cbd31280f294" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> nya-bwa2-gr1.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 101</div>`)[0];
+                popup_29415ca6ad7d65a1a259a2313630a15c.setContent(html_0c399a0f8d038996f3f1cbd31280f294);
+            
+        
+
+        circle_marker_e345c6b420faeb5e76917071c1b97dd6.bindPopup(popup_29415ca6ad7d65a1a259a2313630a15c)
+        ;
+
+        
+    
+    
+            var circle_marker_420cee8da4a8944f5ad8976df968112c = L.circleMarker(
+                [-2.7965017, 30.3535567],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.518324607329845, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_27de18f458780a0c28b625a83cf1d61e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a914b613087b883a8aa8b5ea9e7d93cc = $(`<div id="html_a914b613087b883a8aa8b5ea9e7d93cc" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> nya-bwa1-gr1.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 110</div>`)[0];
+                popup_27de18f458780a0c28b625a83cf1d61e.setContent(html_a914b613087b883a8aa8b5ea9e7d93cc);
+            
+        
+
+        circle_marker_420cee8da4a8944f5ad8976df968112c.bindPopup(popup_27de18f458780a0c28b625a83cf1d61e)
+        ;
+
+        
+    
+    
+            var circle_marker_c22d4316d397515e2a4d582420ed54f2 = L.circleMarker(
+                [-2.7300301, 30.3981296],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.93717277486911, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_c4f626b467bd5c71b2931babe3afccdd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bd2f47ed11dad094419635e6e4dfa705 = $(`<div id="html_bd2f47ed11dad094419635e6e4dfa705" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> gat2-gat-gr1.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 114</div>`)[0];
+                popup_c4f626b467bd5c71b2931babe3afccdd.setContent(html_bd2f47ed11dad094419635e6e4dfa705);
+            
+        
+
+        circle_marker_c22d4316d397515e2a4d582420ed54f2.bindPopup(popup_c4f626b467bd5c71b2931babe3afccdd)
+        ;
+
+        
+    
+    
+            var circle_marker_6d192e72d93d1cd513ed3b57b56923f5 = L.circleMarker(
+                [-2.7245545, 30.4002906],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.507853403141361, "stroke": true, "weight": 3}
+            ).addTo(map_49a556d7107e8c37d346efe68b06f191);
+        
+    
+        var popup_31f3cc687748e8dcb4e93c32f0e08f76 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f848797128a4e52a7627ec63927fa288 = $(`<div id="html_f848797128a4e52a7627ec63927fa288" style="width: 100.0%; height: 100.0%;"><b>G50 Group ID:</b> gat2-gat2-gr2.pnseb<br>         <b>Province:</b> MUYINGA<br>         <b>Usage:</b> 129</div>`)[0];
+                popup_31f3cc687748e8dcb4e93c32f0e08f76.setContent(html_f848797128a4e52a7627ec63927fa288);
+            
+        
+
+        circle_marker_6d192e72d93d1cd513ed3b57b56923f5.bindPopup(popup_31f3cc687748e8dcb4e93c32f0e08f76)
+        ;
+
+        
+    
+</script>
+</html>
