@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALABI Strategy 2025</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS to use the specified font and colors */
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .text-green-walabi { color: #78A22F; }
+        .text-blue-walabi { color: #007C9E; }
+        .text-orange-walabi { color: #F58025; }
+        .bg-green-walabi { background-color: #78A22F; }
+        .bg-blue-walabi { background-color: #007C9E; }
+        .bg-orange-walabi { background-color: #F58025; }
+        .bg-purple-walabi { background-color: #9013FE; }
+
+        /* Icon styling */
+        .icon {
+            font-size: 2.5rem;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin-right: 1.5rem;
+        }
+
+        /* Card hover effect */
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Scroll to top button */
+        #scrollToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #F58025;
+            color: white;
+            padding: 0.75rem 1rem;
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        #scrollToTopBtn:hover {
+            background-color: #d86915;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Main content container -->
+    <div class="container mx-auto max-w-4xl px-4 py-12">
+        <header class="text-center mb-16">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fa-solid fa-leaf text-green-walabi text-5xl"></i>
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-800 leading-tight">
+                WALABI Strategy 2025: Turning Digital Innovation into Impact for Agri-Food
+            </h1>
+        </header>
+
+        <!-- Intro section -->
+        <section class="mb-12">
+            <div class="bg-white p-8 sm:p-10 rounded-xl shadow-lg border-t-8 border-green-walabi transition-transform duration-300 ease-in-out card-hover">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    At WALABI – Wageningen Lab for Agri-Food Business Informatics – 2025 is all about moving from vision to action. We know digital technologies are advancing at lightning speed, from generative AI and digital twins to data spaces and blockchain. But in agri-food, innovation is only meaningful if it creates real impact for people, businesses, and the planet.
+                </p>
+                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                    That philosophy sits at the heart of our 2025 strategy. Here’s how we’re putting it into practice.
+                </p>
+            </div>
+        </section>
+
+        <!-- Knowledge Made Accessible section -->
+        <section class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="flex flex-col bg-white p-6 sm:p-8 rounded-xl shadow-lg border-t-8 border-blue-walabi transition-transform duration-300 ease-in-out card-hover">
+                <div class="flex items-center mb-4">
+                    <i class="fa-solid fa-book-reader text-blue-walabi text-4xl"></i>
+                    <h2 class="ml-4 text-2xl font-bold text-gray-800">1. Knowledge Made Accessible</h2>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    We’re transforming our expertise into bite-sized, attractive knowledge products – from 2-pagers and infographics to podcasts and video explainers. Why? Because decision-makers don’t just need theory, they need actionable insights. The new WALABI Academy will be the home for these resources, making complex topics like interoperability, smart business systems, and AI both understandable and usable.
+                </p>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg h-64 md:h-auto">
+                <img src="https://placehold.co/600x400/78A22F/ffffff?text=Knowledge+Products" alt="Knowledge products" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <!-- A Breeding Ground for Digital Innovation section -->
+        <section class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="order-2 md:order-1 rounded-xl overflow-hidden shadow-lg h-64 md:h-auto">
+                <img src="https://placehold.co/600x400/007C9E/ffffff?text=Digital+Innovation" alt="Digital innovation lab" class="w-full h-full object-cover">
+            </div>
+            <div class="order-1 md:order-2 flex flex-col bg-white p-6 sm:p-8 rounded-xl shadow-lg border-t-8 border-orange-walabi transition-transform duration-300 ease-in-out card-hover">
+                <div class="flex items-center mb-4">
+                    <i class="fa-solid fa-lightbulb text-orange-walabi text-4xl"></i>
+                    <h2 class="ml-4 text-2xl font-bold text-gray-800">2. A Breeding Ground for Digital Innovation</h2>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    WALABI is a collaborative lab. We explore emerging digital trends, design and test prototypes, and co-create solutions with our partners. Our role is to act as a breeding ground for digital innovations – experimenting, testing, and translating ideas into scalable applications. From digital maturity scans to generative AI exploration, our services give organizations a safe space to explore the future.
+                </p>
+            </div>
+        </section>
+
+        <!-- Four Strategic Themes section -->
+        <section class="mb-12">
+            <div class="bg-white p-8 sm:p-10 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-center text-blue-walabi">3. Four Strategic Themes</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Digital Trends Exploration -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-lg transition-colors duration-200 hover:bg-yellow-100">
+                        <i class="fa-solid fa-chart-line text-yellow-walabi text-2xl mt-1"></i>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg text-gray-800">Digital Trends Exploration</h3>
+                            <p class="text-sm text-gray-600">scouting technologies like AI, data spaces, and IoT, and translating them into practical applications.</p>
+                        </div>
+                    </div>
+                    <!-- Business Architecture -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-lg transition-colors duration-200 hover:bg-red-100">
+                        <i class="fa-solid fa-sitemap text-red-walabi text-2xl mt-1"></i>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg text-gray-800">Business Architecture</h3>
+                            <p class="text-sm text-gray-600">designing integrated frameworks that align strategy, processes, and IT.</p>
+                        </div>
+                    </div>
+                    <!-- Smart Business Information Systems -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-lg transition-colors duration-200 hover:bg-purple-100">
+                        <i class="fa-solid fa-laptop-code text-purple-walabi text-2xl mt-1"></i>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg text-gray-800">Smart Business Information Systems</h3>
+                            <p class="text-sm text-gray-600">making systems smarter, more connected, and more transparent across the food chain.</p>
+                        </div>
+                    </div>
+                    <!-- Interoperability & Data Sharing -->
+                    <div class="flex items-start p-4 bg-gray-50 rounded-lg transition-colors duration-200 hover:bg-green-100">
+                        <i class="fa-solid fa-share-alt text-green-walabi text-2xl mt-1"></i>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-lg text-gray-800">Interoperability & Data Sharing</h3>
+                            <p class="text-sm text-gray-600">building fair digital infrastructures where data can be exchanged with trust and meaning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Building Partnerships and Ecosystems section -->
+        <section class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="flex flex-col bg-white p-6 sm:p-8 rounded-xl shadow-lg border-t-8 border-purple-walabi transition-transform duration-300 ease-in-out card-hover">
+                <div class="flex items-center mb-4">
+                    <i class="fa-solid fa-handshake text-purple-walabi text-4xl"></i>
+                    <h2 class="ml-4 text-2xl font-bold text-gray-800">4. Building Partnerships and Ecosystems</h2>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    We’re not doing this alone. WALABI 2025 is about working with launch customers, research groups, and policy partners inside and outside Wageningen. We’ll be present at key events, run collaborative workshops, and invite stakeholders into our growing ecosystem. Because digital innovation only scales when it’s built together.
+                </p>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg h-64 md:h-auto">
+                <img src="https://placehold.co/600x400/9013FE/ffffff?text=Ecosystem+Building" alt="Team collaborating" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <!-- Our Commitment for 2025 section -->
+        <section class="mb-12">
+            <div class="bg-white p-8 sm:p-10 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-center text-orange-walabi">5. Our Commitment for 2025</h2>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check-circle text-orange-walabi text-2xl mt-1"></i>
+                        <span class="ml-4">More knowledge products, easier to access.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check-circle text-orange-walabi text-2xl mt-1"></i>
+                        <span class="ml-4">New ideation and advisory services for partners.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check-circle text-orange-walabi text-2xl mt-1"></i>
+                        <span class="ml-4">Stronger outreach through events, newsletters, and our LinkedIn page.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check-circle text-orange-walabi text-2xl mt-1"></i>
+                        <span class="ml-4">And above all: solutions that embed sustainability, transparency, and resilience into agri-food systems.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Looking Ahead section -->
+        <section class="mb-16">
+            <div class="bg-green-walabi text-white p-8 sm:p-10 rounded-xl shadow-lg border-b-8 border-gray-200 transition-transform duration-300 ease-in-out card-hover">
+                <div class="flex items-center mb-4">
+                    <i class="fa-solid fa-rocket text-4xl"></i>
+                    <h2 class="ml-4 text-2xl font-bold">Looking Ahead</h2>
+                </div>
+                <p class="text-lg leading-relaxed">
+                    WALABI’s strategy for 2025 is ambitious, but grounded: it’s about making digital innovation work for agri-food. We’ll continue to balance scientific rigor with practical tools, building systems that are ready for the future.
+                </p>
+                <p class="mt-4 text-lg leading-relaxed font-semibold">
+                    Join us on this journey. Let’s turn data into decisions – and decisions into sustainable futures.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scroll to top button -->
+    <a href="#top" id="scrollToTopBtn" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript for scroll to top button -->
+    <script>
+        // Get the button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        const rootElement = document.documentElement;
+
+        // Function to handle the scroll event
+        function handleScroll() {
+            // Check if the user has scrolled more than 100px down from the top
+            if (rootElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+                scrollToTopBtn.style.opacity = "1";
+            } else {
+                scrollToTopBtn.style.display = "none";
+                scrollToTopBtn.style.opacity = "0";
+            }
+        }
+
+        // Add a scroll event listener to the window
+        document.addEventListener("scroll", handleScroll);
+
+        // Add a click listener to the button
+        scrollToTopBtn.addEventListener("click", () => {
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+</html>
