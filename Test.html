@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WP4: AI for Local Language Farm Advisory</title>
+  <style>
+    /* ===== BASE STYLES ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+```
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8f6f3;
+  color: #2d2d2d;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.slides {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slide {
+  background: white;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a3a2e;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.slide h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a3a2e;
+  margin-bottom: 16px;
+}
+
+.slide h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2d2d2d;
+  margin-bottom: 12px;
+}
+
+.slide p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.slide ul {
+  padding-left: 20px;
+  margin: 16px 0;
+}
+
+.slide li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.slide .visual {
+  margin-top: 24px;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.slide .highlight {
+  background-color: #f0f7f2;
+  padding: 12px;
+  border-left: 4px solid #3a7e65;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.slide .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.card {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.card h4 {
+  font-size: 1rem;
+  color: #1a3a2e;
+  margin-bottom: 8px;
+}
+
+.slide .timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #e0e0e0;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}
+
+.step:nth-child(1) { background: #3a7e65; }
+.step:nth-child(2) { background: #8bc34a; }
+.step:nth-child(3) { background: #03a9f4; }
+.step:nth-child(4) { background: #9c27b0; }
+
+.slide .comparison {
+  display: flex;
+  margin: 24px 0;
+  gap: 20px;
+}
+
+.comparison div {
+  flex: 1;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.comparison .left {
+  background: #f0f7f2;
+  border-color: #3a7e65;
+}
+
+.comparison .right {
+  background: #fff;
+  border-color: #ccc;
+}
+
+.comparison h4 {
+  color: #1a3a2e;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.comparison ul {
+  padding-left: 16px;
+}
+
+.comparison li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.slide footer {
+  margin-top: 30px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.slide-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1a3a2e;
+  margin-bottom: 10px;
+}
+
+.slide-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .slide {
+    padding: 24px;
+    min-height: auto;
+  }
+  .slide h1 { font-size: 2.2rem; }
+  .slide h2 { font-size: 1.8rem; }
+  .slide h3 { font-size: 1.2rem; }
+  .slide p { font-size: 1rem; }
+  .timeline { flex-wrap: wrap; }
+  .step { width: 100%; margin: 8px 0; }
+}
+```
+
+  </style>
+</head>
+<body>
+
+<div class="slides">
+
+  <!-- Slide 1 -->
+
+  <div class="slide">
+    <h1 class="slide-title">AI for Local Language Farm Advisory</h1>
+    <p class="slide-subtitle">WP4 | WUR | Making Agricultural Knowledge Accessible — Offline, In Local Languages</p>
+    <p style="text-align:center; color:#666; font-size:1.1rem;">Arnab Gupta, WSER</p>
+    <div class="visual">Visual: Split image — farmer holding phone + abstract AI brain overlay</div>
+  </div>
+
+  <!-- Slide 2 -->
+
+  <div class="slide">
+    <h2>The Problem</h2>
+    <p>Farmers can't access science-based knowledge because it's not in their language.</p>
+    <ul>
+      <li>WUR holds world-class agricultural research — locked in English/Dutch</li>
+      <li>80% of smallholder farmers speak Swahili, French, Arabic</li>
+      <li>Current cloud-based tools create data security risks</li>
+      <li>Critical gaps: climate-resilient seeds, pest control, market info</li>
+    </ul>
+    <div class="visual">Visual: Map of Sub-Saharan Africa with red dots where knowledge doesn't reach</div>
+  </div>
+
+  <!-- Slide 3 -->
+
+  <div class="slide">
+    <h2>Why On-Premise?</h2>
+    <p>Data isn't just private — it's sacred.</p>
+    <ul>
+      <li>Sensitive farmer records: land use, income, yields</li>
+      <li>GDPR-like regulations emerging across Africa</li>
+      <li>No external cloud dependencies = full control</li>
+      <li>Trust + compliance + sustainability are non-negotiable</li>
+    </ul>
+    <div class="visual">Visual: Shield icon protecting a phone with local-language UI</div>
+  </div>
+
+  <!-- Slide 4 -->
+
+  <div class="slide">
+    <h2>Our Solution</h2>
+    <p>An AI advisor that works without internet.</p>
+    <ul>
+      <li>Runs on a single laptop — no cloud, no login</li>
+      <li>Answers questions in Swahili, French, Arabic</li>
+      <li>Powers local advisory through Mistral 7B + FAISS + Ollama</li>
+    </ul>
+    <div class="visual">Visual: Laptop with icons: 🔒 Ollama | 📚 FAISS | 🌍 Multilingual | 🐳 Docker</div>
+  </div>
+
+  <!-- Slide 5 -->
+
+  <div class="slide">
+    <h2>Knowledge Base Content</h2>
+    <p>Crafted from trusted, local-relevant sources:</p>
+    <div class="grid">
+      <div class="card"><h4>Unstructured</h4><p>WUR reports, policy docs, research papers</p></div>
+      <div class="card"><h4>Structured</h4><p>Farmer surveys, crop trials, soil measurements</p></div>
+      <div class="card"><h4>Internal</h4><p>CGN, STTS Uganda, AGROFOODSEC Kenya</p></div>
+      <div class="card"><h4>External</h4><p>FAOSTAT, World Bank, HarvestChoice, Africa Soil Info</p></div>
+    </div>
+    <p><strong>Focus Areas:</strong> Seeds • Soil Management • Pest Control • Market Info • Policy Frameworks</p>
+    <div class="visual">Visual: Collage of document snippets in 4 languages</div>
+  </div>
+
+  <!-- Slide 6 -->
+
+  <div class="slide">
+    <h2>Multilingual RAG Strategy</h2>
+    <p>Ask in Swahili. Get answer from English documents.</p>
+    <div class="highlight">
+      <strong>Current Capability:</strong> English, Spanish, French queries<br>
+      <strong>Approach:</strong> Multilingual embeddings handle cross-language retrieval<br>
+      <strong>Quality:</strong> English documents answer non-English questions accurately
+    </div>
+    <p><strong>Future Enhancement:</strong> Dedicated translation layer (Phase 2)</p>
+    <div class="visual">Visual: Flowchart: Swahili query → Embedding → English doc → Swahili answer</div>
+  </div>
+
+  <!-- Slide 7 -->
+
+  <div class="slide">
+    <h2>ML Pipeline Architecture</h2>
+    <h3>Schema Harmonization Challenge</h3>
+    <p>Different CSV formats across datasets → automated mapping + unit normalization</p>
+    <p><em>Example:</em> rainfall_mm, annual_precip, precipitation → unified as "rainfall"</p>
+    <h3>ML Model Types</h3>
+    <div class="grid">
+      <div class="card"><h4>Classification</h4><p>Farmer adoption likelihood, disease detection</p></div>
+      <div class="card"><h4>Clustering</h4><p>Farm typologies, similar growing conditions</p></div>
+      <div class="card"><h4>Regression</h4><p>Yield prediction, input optimization</p></div>
+      <div class="card"><h4>Time Series</h4><p>Seasonal patterns, price forecasting</p></div>
+    </div>
+  </div>
+
+  <!-- Slide 8 -->
+
+  <div class="slide">
+    <h2>RAG + ML Integration Patterns</h2>
+    <ul>
+      <li><strong>Sequential:</strong> ML identifies risk → RAG explains how to respond</li>
+      <li><strong>Parallel:</strong> Both process query → results merged</li>
+      <li><strong>Conditional:</strong> Query complexity determines routing</li>
+      <li><strong>Feedback Loop:</strong> RAG findings improve ML feature selection</li>
+    </ul>
+    <div class="visual">Visual: Two gears labeled "RAG" and "ML" meshing into one output arrow</div>
+  </div>
+
+  <!-- Slide 9 -->
+
+  <div class="slide">
+    <h2>Technical Stack</h2>
+    <p>Built for the field — not the cloud</p>
+    <div class="grid">
+      <div class="card"><h4>LLM</h4><p>Ollama + Mistral 7B (CPU-friendly)</p></div>
+      <div class="card"><h4>Vector DB</h4><p>FAISS with multilingual embeddings</p></div>
+      <div class="card"><h4>Storage</h4><p>Local SSD (no internet needed)</p></div>
+      <div class="card"><h4>Interface</h4><p>Text-first → Voice next</p></div>
+      <div class="card"><h4>Container</h4><p>Dockerized for portability</p></div>
+    </div>
+    <p><strong>Hardware:</strong> Lenovo PS15 / Intel Xeon / 32GB RAM</p>
+  </div>
+
+  <!-- Slide 10 -->
+
+  <div class="slide">
+    <h2>Phase Roadmap</h2>
+    <div class="timeline">
+      <div class="step">Phase 1<br>RAG Core</div>
+      <div class="step">Phase 2<br>+ ML Analytics</div>
+      <div class="step">Phase 3<br>+ Voice Interface</div>
+      <div class="step">Phase 4<br>+ Field Deployment</div>
+    </div>
+    <div class="highlight">
+      <strong>Progress:</strong> Phase 1 fully complete. MVP running.
+    </div>
+  </div>
+
+  <!-- Slide 11 -->
+
+  <div class="slide">
+    <h2>Progress So Far</h2>
+    <ul>
+      <li>✅ Completed: Local LLM deployment (Ollama + Mistral 7B)</li>
+      <li>✅ Completed: Document pipeline (500+ agricultural docs processed)</li>
+      <li>✅ Completed: FAISS vector store with agricultural embeddings</li>
+      <li>✅ Testing: Multilingual query processing</li>
+      <li>✅ In Progress: Response quality optimization</li>
+      <li>✅ Prototyped: AnythingLLM RAG system</li>
+      <li>✅ Containerized: Docker environment ready</li>
+    </ul>
+    <div class="visual">Visual: Screenshot mockup of chatbot answering in French</div>
+  </div>
+
+  <!-- Slide 12 -->
+
+  <div class="slide">
+    <h2>Why We're Different</h2>
+    <div class="comparison">
+      <div class="left">
+        <h4>Traditional Tools</h4>
+        <ul>
+          <li>Cloud-dependent</li>
+          <li>English-only</li>
+          <li>Static PDFs</li>
+          <li>One-size-fits-all</li>
+          <li>No feedback loop</li>
+        </ul>
+      </div>
+      <div class="right">
+        <h4>Our System</h4>
+        <ul>
+          <li>Fully offline</li>
+          <li>Multilingual embeddings</li>
+          <li>Dynamic RAG + ML insights</li>
+          <li>Context-aware, region-specific</li>
+          <li>Farmer input shapes models</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 13 -->
+
+  <div class="slide">
+    <h2>Target Users & Impact</h2>
+    <p><strong>Users:</strong> Farmers (Swahili/French/Arabic), extension workers, NGOs, agri-cooperatives</p>
+    <p><strong>Impact Targets:</strong></p>
+    <ul>
+      <li>↑ 30% adoption of climate-smart practices</li>
+      <li>↓ 25% crop loss from pests/disease</li>
+      <li>↑ 20% income via better market info</li>
+    </ul>
+    <div class="visual">Visual: Photos of real farmers + stats overlay</div>
+  </div>
+
+  <!-- Slide 14 -->
+
+  <div class="slide">
+    <h2>Call to Action</h2>
+    <p><strong>We need:</strong></p>
+    <ul>
+      <li>🛠️ Hardware donation (x5 units: Lenovo PS15 / Intel Xeon / 32GB RAM)</li>
+      <li>🤖 Partners: Local AI developers in Kenya/Uganda</li>
+      <li>🌱 Pilots: NGOs to test in 3 districts</li>
+      <li>💬 Linguists: Validate translations & dialects</li>
+    </ul>
+    <p><strong>We deliver:</strong></p>
+    <ul>
+      <li>Open-source code</li>
+      <li>Training kits</li>
+      <li>Impact reports</li>
+    </ul>
+    <div class="visual">Visual: Handshake over tablet showing Swahili AI response</div>
+  </div>
+
+  <!-- Slide 15 -->
+
+  <div class="slide">
+    <h1>The Future of Farming Is Local</h1>
+    <p style="font-size:1.5rem; font-style:italic; color:#3a7e65; margin:40px 0;">
+      "When knowledge speaks the farmer's language — and stays on their device — change becomes possible."
+    </p>
+    <footer>
+      Arnab Gupta, WSER<br>
+      WP4 | AI for Future Food Systems | Wageningen University & Research
+    </footer>
+    <div class="visual">Visual: Sunset over African farmland, subtle digital particles forming an AI brain above</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Built for offline sharing. No internet required. © 2025 WP4 | WUR
+</div>
+
+</body>
+</html>
